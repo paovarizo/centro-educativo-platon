@@ -1,0 +1,41 @@
+@import '../../styles/base';
+
+
+body{
+    background: $color-beige;
+    font-family: $font-inter-regular;
+    color: $color-blue;
+}
+label{
+    display: block;
+}
+input{
+    display: block;
+}
+button{
+    display: block;
+}
+
+.Grid-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.input-mail,.input-password, .input-name, .input-date-birth{
+    width: 500px;
+    height: 40px;
+    border: 2px solid $color-blue;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.button-enter{
+    width: 510px;
+    height: 40px;
+    background-color: $color-blue-light;
+    color: $color-blue;
+    font-weight: bold;
+    border: 2px solid $color-blue-light;
+    border-radius: 5px;
+}

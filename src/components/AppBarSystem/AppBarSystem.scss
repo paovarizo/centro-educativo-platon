@@ -1,0 +1,29 @@
+@import '../../styles/base';
+
+body{
+    color: $color-blue;
+    font-family: $font-inter-regular;
+}
+a, button{
+    display: block;
+}
+a{
+    color: $color-blue;
+    font-weight: bold;
+    padding-right: 20px;
+}
+button{
+    width: 160px;
+    height: 43px;
+    background-color: $color-blue;
+    color: $color-beige;
+    border: 1px solid $color-blue;
+    border-radius: 5px;
+}
+.MuiAppBar-root{
+    background-color: $color-beige !important;
+    box-shadow: none !important;
+}
+.Logo{
+    width: 200px;
+}

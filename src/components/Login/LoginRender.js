@@ -1,12 +1,15 @@
 import './Login.scss'
 import Grid from '@mui/material/Grid';
+import Animation from '../../assets/login-animation.gif'
 export const LoginRender = ()=> {
     return(
         <>
         <div className='Grid-container'>
             <Grid container spacing={2}>
                 <Grid item xs={6}>
-                    <div>xs=8</div>
+                    <div>
+                        <img src={Animation} />
+                    </div>
                 </Grid>
                 <Grid item xs={6}>
                     <div>

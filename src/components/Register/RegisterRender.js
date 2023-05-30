@@ -1,5 +1,6 @@
 import './Register.scss'
 import Grid from '@mui/material/Grid';
+import Animation from '../../assets/register-animation.gif'
 export const RegisterRender = ()=> {
     return(
         <>
@@ -22,7 +23,9 @@ export const RegisterRender = ()=> {
                     </div>
                 </Grid>
                 <Grid item xs={6}>
-                    <div>xs=8</div>
+                    <div>
+                        <img src={Animation}/>
+                    </div>
                 </Grid>
             </Grid>
         </div>

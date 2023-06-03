@@ -15,7 +15,7 @@ input{
 button{
     display: block;
 }
-.input-mail,.input-password, .input-name, .input-date-birth{
+.input-mail,.input-password, .input-name, .input-date-birth, .input-name-parents{
     width: 500px;
     height: 40px;
     border: 2px solid $color-blue;
@@ -32,4 +32,10 @@ button{
     font-weight: bold;
     border: 2px solid $color-blue-light;
     border-radius: 5px;
+}
+.Grid-container{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

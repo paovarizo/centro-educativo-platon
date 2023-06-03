@@ -6,7 +6,7 @@ export const LoginRender = ()=> {
         <>
         <div className='Grid-container'>
             <Grid container spacing={2}>
-                <Grid item xs={6}>
+                <Grid item xs={6} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <div>
                         <img src={Animation} />
                     </div>
@@ -22,7 +22,7 @@ export const LoginRender = ()=> {
                         <input className='input-password'/>
                         <button className='button-enter'>INGRESAR</button>
                         <div className='Container-forgot-password'>
-                            <p>Olvide mi contraseña</p>
+                            <a href='/recover'>Olvide mi contraseña</a>
                         </div>
                     </div>
                 </Grid>

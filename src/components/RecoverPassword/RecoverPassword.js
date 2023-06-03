@@ -1,7 +1,10 @@
+import AppBarSystem from "../AppBarSystem/AppBarSystem";
 import { RecoverPasswordRender } from "./RecoverPasswordRender"
 const RecoverPassword =()=>{
     return (
-        <RecoverPasswordRender/>
+        <>
+        <AppBarSystem></AppBarSystem>
+        <RecoverPasswordRender/></>
     )
 }
 export default RecoverPassword;

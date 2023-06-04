@@ -43,3 +43,14 @@ button{
         padding: 0;
     }
 }
+.MuiAlert-action{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.MuiAlert-root{
+    padding: 10px !important;
+    align-items: center;
+}
+.MuiButtonBase-root {
+    width: 50px;
+}

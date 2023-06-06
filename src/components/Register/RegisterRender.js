@@ -92,7 +92,7 @@ export const RegisterRender = ()=> {
                 </Grid>
             </Grid>
         </div>
-        <Snackbar open={open} onClose={handleClose} autoHideDuration={2000}>
+        <Snackbar open={open} onClose={handleClose} autoHideDuration={2000} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
             <Alert onClose={handleClose} severity="error">
             Por favor llena todos los campos
             </Alert>

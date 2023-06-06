@@ -1,0 +1,60 @@
+@import '../../styles/base';
+
+.container-buttons{
+    margin-top: 30px !important;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+img{
+    width: 600px;
+}
+.button-filled-dark-blue{
+    background-color: $color-blue;
+    border: none;
+    color: $color-beige;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px
+}
+.button-filled-light-blue{
+    background-color: $color-blue-light;
+    border: none;
+    color: $color-blue;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px
+}
+.our-services-container{
+    margin: 50px;
+}
+.MuiButtonBase-root{
+    width: 360px;
+    align-items: baseline !important;
+}
+.MuiAccordionSummary-root{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    font-family: $font-inter-regular !important;
+    color: $color-blue !important;
+}
+.MuiPaper-root{
+    background: $color-beige !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.MuiBox-root{
+    padding: 0 !important;
+}
+.MuiButtonBase-root.MuiTab-root.Mui-selected{
+    color : $color-blue !important;
+    font-weight: bold;
+}
+.MuiTabs-indicator{
+    background-color: $color-yellow !important
+}

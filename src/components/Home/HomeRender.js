@@ -119,16 +119,93 @@ export const HomeRender = ()=> {
                     </Accordion>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    Atención psicologica para tu empresa
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 1-10 pacientes</strong></AccordionSummary>
+                        <AccordionDetails>
+                            <div>
+                                <h4>Paquete basico</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $4,000.00 mensual.</p>
+                                <p>El colaborador sólo paga $150.00 por sesión.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete premium</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $6,500.00 mensual.</p>
+                                <p>El colaborador sólo paga $100.00 por sesión.</p>
+                                <p>2. Dos talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete gold</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $10,00.00 mensual.</p>
+                                <p>El colaborador no pagará por sesión.</p>
+                                <p>2. Cuatro talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                                <p>3. Atención psicológica individual a familiares directos de colaboradores sin costo</p>
+                            </div>
+                            <small>* Todos los paquetes son deducibles de impuestos e incluyen IVA.</small>
+                            <br/>
+                            <small>* Para terapias en pareja y familiares de colaboradores se aplican términos y condiciones directo con el centro</small>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 11-25 pacientes</strong></AccordionSummary>
+                        <AccordionDetails>
+                            <div>
+                                <h4>Paquete basico</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $8,200.00 mensual.</p>
+                                <p>El colaborador sólo paga $150.00 por sesión.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete premium</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $14,000.00 mensual.</p>
+                                <p>El colaborador sólo paga $100.00 por sesión.</p>
+                                <p>2. Dos talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete gold</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $20,00.00 mensual.</p>
+                                <p>El colaborador no pagará por sesión.</p>
+                                <p>2. Cuatro talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                                <p>3. Atención psicológica individual a familiares directos de colaboradores sin costo</p>
+                            </div>
+                            <small>* Todos los paquetes son deducibles de impuestos e incluyen IVA.</small>
+                            <br/>
+                            <small>* Para terapias en pareja y familiares de colaboradores se aplican términos y condiciones directo con el centro</small>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 26-50 pacientes</strong></AccordionSummary>
+                        <AccordionDetails>
+                            <div>
+                                <h4>Paquete basico</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $18,500.00 mensual.</p>
+                                <p>El colaborador sólo paga $150.00 por sesión.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete premium</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $30,000.00 mensual.</p>
+                                <p>El colaborador sólo paga $100.00 por sesión.</p>
+                                <p>2. Dos talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                            </div>
+                            <div>
+                                <h4>Paquete gold</h4>
+                                <p>1. Atención psicológica para colaboradores de tu empresa durante todo un año por: $40,00.00 mensual.</p>
+                                <p>El colaborador no pagará por sesión.</p>
+                                <p>2. Cuatro talleres para colaboradores de forma anual que se imparten en tus instalaciones.</p>
+                                <p>3. Atención psicológica individual a familiares directos de colaboradores sin costo</p>
+                            </div>
+                            <small>* Todos los paquetes son deducibles de impuestos e incluyen IVA.</small>
+                            <br/>
+                            <small>* Para terapias en pareja y familiares de colaboradores se aplican términos y condiciones directo con el centro</small>
+                        </AccordionDetails>
+                    </Accordion>
                 </TabPanel>
             </Box>
         </div>
         <div style={{display: 'flex', justifyContent: 'flex-end', marginRight: '50px'}}>
-            <Fab color="primary" aria-label="add" sx={{position: 'fixed', top: '80vh'}} href='https://wa.link/3dredf' target='_blank'>
-                <AddIcon />
+            <Fab aria-label="add" sx={{position: 'fixed', top: '80vh'}} href='https://wa.link/3dredf' target='_blank'>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/7/75/Whatsapp_logo_svg.png' style={{width: '65px'}}/>
             </Fab>
             <Fab color="primary" aria-label="add" sx={{position: 'fixed', top: '88vh'}} href='http://m.me/CentroEducativoPlaton' target='_blank'>
-                <AddIcon />
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/1024px-Facebook_Messenger_logo_2020.svg.png' style={{width: '55px'}}/>
             </Fab>
         </div>
         

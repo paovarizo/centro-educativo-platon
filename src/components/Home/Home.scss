@@ -40,8 +40,16 @@ img{
     display: flex;
     align-items: center;
     padding: 0 !important;
-    font-family: $font-inter-regular !important;
+}
+.MuiAccordionSummary-content{
     color: $color-blue !important;
+    font-size: 16px;
+    font-family: $font-inter-regular !important;
+    text-decoration: underline;
+}
+.MuiAccordionDetails-root{
+    color: $color-blue !important;
+    font-family: $font-inter-regular !important;
 }
 .MuiPaper-root{
     background: $color-beige !important;
@@ -57,4 +65,8 @@ img{
 }
 .MuiTabs-indicator{
     background-color: $color-yellow !important
+}
+.MuiFab-root{
+    box-shadow: none !important;
+    background-color: $color-beige !important;
 }

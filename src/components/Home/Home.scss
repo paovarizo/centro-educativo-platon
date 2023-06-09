@@ -28,7 +28,7 @@ img{
     font-weight: bold;
     width: 250px
 }
-.our-services-container{
+.our-services-container, .our-locations{
     margin: 50px;
 }
 .MuiButtonBase-root{
@@ -69,4 +69,46 @@ img{
 .MuiFab-root{
     box-shadow: none !important;
     background-color: $color-beige !important;
+}
+.introduction{
+    margin: 20px 0;
+}
+.price-card{
+    width: 295px;
+    height: 105px;
+    background-color: $color-blue-light;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.price-card-container{
+    height: 70%;
+    background:$color-beige;
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px 5px 0px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.maps-image{
+    width: 150px;
+}
+.grid-container-maps{
+    width: 50% !important;
+}
+.grid-container-maps-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.link-maps{
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
 }

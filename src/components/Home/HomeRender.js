@@ -11,10 +11,19 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Fab from '@mui/material/Fab';
+import Maps from '../../assets/google-maps.png'
 import AddIcon from '@mui/icons-material/Add';
 
 import './Home.scss'
 import animation from '../../assets/animation-home.gif'
+const PriceCard = (price, title)=>{
+    return <div className='price-card'>
+        <div className='price-card-container'>
+            <p>{title}</p>
+            <p>{price}</p>
+        </div>
+        </div>
+};
 export const HomeRender = ()=> {
     const [value, setValue] = React.useState(0);
 
@@ -92,35 +101,41 @@ export const HomeRender = ()=> {
                     <Tab label="Atención psicologica para tu empresa" {...a11yProps(1)} />
                     </Tabs>
                 </Box>
+                <div className='introduction'>
+                Somos un centro que brinda atención psicológica a niños, jóvenes y adultos. 
+                Contamos con especialistas en enfoque <strong>cognitivo conductual</strong>.
+                Las sesiones pueden ser presenciales o a través de videollamadas y tienen una duración de 45 minutos. Contamos con horarios de lunes a sábado de 9:00 am a 6:55 pm y domingos de 9:00 am a 2:00 pm.
+                Se puede acceder a descuentos y promociones para estudiantes, personal médico y adultos mayores.
+                </div>
                 <TabPanel value={value} index={0}>
-                    <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Terapia psicologica</strong></AccordionSummary>
+                    <Accordion >
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención psicologica individual</strong></AccordionSummary>
                         <AccordionDetails>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                            <p>Los casos más atendidos son Trastornos de ansiedad, depresión, suicidio, estrés, duelo, manejo de emociones, habilidades sociales cognitivas, comunicación, adicciones, baja autoestima, toma de decisiones, inseguridad, abuso sexual, esquizofrenia, trastorno bipolar, trastorno de pánico, fobias, déficit de atención e hiperactividad, trastornos de alimentación, trastornos de la personalidad, trastornos del estado de ánimo.</p>
+                            <p><strong>Precio:</strong></p>
+                           {PriceCard('$300.00', 'Atención psicologica individual')} 
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Terapia de pareja o familiar</strong></AccordionSummary>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención psicologica familiar</strong></AccordionSummary>
                         <AccordionDetails>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                            <p>Es un servicio cuyo objetivo es modificar las dinámicas relacionales interfamiliares para mejorarlas y aportar bienestar a los integrantes .</p>
+                            <p><strong>Precio:</strong></p>
+                           {PriceCard('$400.00', 'Atención psicologica familiar')} 
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Orientación</strong></AccordionSummary>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención psicologica en pareja</strong></AccordionSummary>
                         <AccordionDetails>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}><strong>Canalización</strong></AccordionSummary>
-                        <AccordionDetails>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.</p>
+                            <p>Los casos mas atendidos son violencia, infidelidad, celos y abuso sexual.</p>
+                            <p><strong>Precio:</strong></p>
+                           {PriceCard('$530.00', 'Atención psicologica en pareja')} 
                         </AccordionDetails>
                     </Accordion>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 1-10 pacientes</strong></AccordionSummary>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención de 1-10 colaboradores</strong></AccordionSummary>
                         <AccordionDetails>
                             <div>
                                 <h4>Paquete basico</h4>
@@ -146,7 +161,7 @@ export const HomeRender = ()=> {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 11-25 pacientes</strong></AccordionSummary>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención de 11-25 colaboradores</strong></AccordionSummary>
                         <AccordionDetails>
                             <div>
                                 <h4>Paquete basico</h4>
@@ -172,7 +187,7 @@ export const HomeRender = ()=> {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención para 26-50 pacientes</strong></AccordionSummary>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon/>}> <strong>Atención de 26-50 colaboradores</strong></AccordionSummary>
                         <AccordionDetails>
                             <div>
                                 <h4>Paquete basico</h4>
@@ -199,6 +214,29 @@ export const HomeRender = ()=> {
                     </Accordion>
                 </TabPanel>
             </Box>
+        </div>
+        <div className='our-locations'>
+            <h2>Nuestras ubicaciones</h2>
+            <div className='grid-container-maps-container'>
+                <Grid container spacing={2} className='grid-container-maps'>
+                    <Grid item xs={6}>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <img src={Maps} className='maps-image'/>
+                        </div>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <a href='https://maps.app.goo.gl/X5VZzcRYrGbiUqXw9' className='link-maps'>Dr. José María Vertiz 995, Narvarte Oriente, Benito Juárez, 03020 Ciudad de México, CDMX.</a>
+                        </div>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <img src={Maps} className='maps-image'/>
+                        </div>
+                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                            <a href='https://maps.app.goo.gl/37dLEg8vfgENzjQT8' className='link-maps'>Av. Tlahuac 521, Zona Urbana Ejidal San Andrés Tomatlán, Iztapalapa, 09080 Ciudad de México, CDMX.</a>
+                        </div>
+                    </Grid>
+                </Grid>
+            </div>
         </div>
         <div style={{display: 'flex', justifyContent: 'flex-end', marginRight: '50px'}}>
             <Fab aria-label="add" sx={{position: 'fixed', top: '80vh'}} href='https://wa.link/3dredf' target='_blank'>

@@ -18,6 +18,8 @@ export const LoginRender = ()=> {
     const handleSubmitLogin =()=>{
         if(mail === '' || password === ''){
             handleClick()
+        }else{
+            window.location.href = '/inicio';
         }
     }
     const [open, setOpen] = useState(false);
@@ -50,8 +52,8 @@ export const LoginRender = ()=> {
                         <label>Correo electronico</label>
                         <input className='input-mail' onChange={handleChangeMail} value={mail}/>
                         <label>Contraseña</label>
-                        <input className='input-password' onChange={handlePassword} value={password}/>
-                        <button className='button-enter' onClick={handleSubmitLogin}>INGRESAR</button>
+                        <input className='input-password' onChange={handlePassword} value={password} type='password'/>
+                        <button className='button-enter-login' onClick={handleSubmitLogin}>INGRESAR</button>
                         <div className='Container-forgot-password'>
                             <a href='/recover'>Olvide mi contraseña</a>
                         </div>

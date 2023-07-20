@@ -32,11 +32,11 @@ img{
     margin: 50px;
 }
 .MuiButtonBase-root{
-    width: 360px;
+    width: 360px !important;
     align-items: baseline !important;
 }
 .MuiAccordionSummary-root{
-    width: 100%;
+    width: 100% !important;
     display: flex;
     align-items: center;
     padding: 0 !important;

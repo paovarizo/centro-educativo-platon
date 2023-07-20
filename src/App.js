@@ -5,7 +5,9 @@ import Home from './components/Home/Home';
 import Register from './components/Register/Register';
 import RecoverPassword from './components/RecoverPassword/RecoverPassword';
 import Profile from './components/Profile/Profile';
+import Inicio from './components/Inicio/Inicio'
 import LandingPage from './components/LandingPage/LandingPage';
+import Appoiment from './components/Appoiment/Appoiment';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/recover' element={<RecoverPassword/>}/>
         <Route path='/profile' element={<Profile/>}/>
-        <Route path='/info' element={<LandingPage/>}/>
+        <Route path='/inicio' element={<Inicio/>}/>
+        <Route path='/appoiment' element={<Appoiment/>}/>
       </Routes>
     </BrowserRouter>
     </>

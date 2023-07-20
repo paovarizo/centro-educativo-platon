@@ -15,6 +15,12 @@ input{
 button{
     display: block;
 }
+select{
+    width: 510px !important;
+    height: 50px !important;
+    padding: 5px;
+    color: $color-blue;
+}
 .input-mail,.input-password{
     width: 500px;
     height: 40px;
@@ -24,7 +30,7 @@ button{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.button-enter-login{
+.button-enter{
     width: 510px;
     height: 40px;
     background-color: $color-blue-light;
@@ -53,4 +59,20 @@ button{
 }
 .MuiButtonBase-root {
     width: 50px;
+}
+.img-inicio{
+    width: 300px;
+}
+.button-enter{
+    width: 510px;
+    height: 50px;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
 }

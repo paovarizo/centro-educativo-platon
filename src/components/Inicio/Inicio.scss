@@ -24,7 +24,7 @@ button{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.button-enter-login{
+.button-enter{
     width: 510px;
     height: 40px;
     background-color: $color-blue-light;
@@ -53,4 +53,15 @@ button{
 }
 .MuiButtonBase-root {
     width: 50px;
+}
+.img-inicio{
+    width: 300px;
+}
+.button-enter{
+    width: 150px !important;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
